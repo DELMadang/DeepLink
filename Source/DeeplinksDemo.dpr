@@ -2,14 +2,14 @@ program DeeplinksDemo;
 
 uses
   Vcl.Forms,
-  FormMain_u in 'D:\OpenSource\delphi\delphi-vcl-deeplinks-demo\Forms\FormMain_u.pas' {FormMain},
-  UtilDeeplinks in 'D:\OpenSource\delphi\delphi-vcl-deeplinks-demo\Utils\UtilDeeplinks.pas';
+  uMain in 'uMain.pas' {frmMain},
+  uDeepLink in 'uDeepLink.pas';
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TFormMain, FormMain);
+  Application.CreateForm(TfrmMain, frmMain);
   Application.Run;
 end.
